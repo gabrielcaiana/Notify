@@ -269,8 +269,9 @@ footer ul li:hover {
     .contato {
         flex-wrap: wrap;
     }
-    .contato .video {
+    .contato .video iframe {
         margin: 30px 0;
+        width: 400px;
     }
     .pessoas li {
         display: none;
