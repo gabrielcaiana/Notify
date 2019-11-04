@@ -2,21 +2,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-areas: 'banner' 'main' 'section' 'footer';
-    grid-template-columns: 100%;
 }
 
 
 /*Header*/
 
 header {
-    grid-area: banner;
     background-image: url(img/banner.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -76,19 +72,19 @@ header {
 /*Main*/
 
 main {
-    grid-area: main;
     width: 100%;
     height: auto;
     margin: 70px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 main div {
     padding: 20px;
     margin: 0 5px;
     display: flex;
+    width: 300px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -206,12 +202,18 @@ main div img:hover {
 }
 
 .social li {
-    background-color: rgba(19, 168, 69, 0.582);
+    background-color: rgba(172, 172, 172, 0.582);
     border-radius: 100px !important;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.social li:hover {
+    background-color: rgba(19, 168, 69, 0.582);
 }
 
 .social img {
@@ -220,3 +222,57 @@ main div img:hover {
 
 
 /*Footer*/
+
+footer {
+    padding: 30px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 227, 227);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer ul li:hover {
+    background-color: rgba(19, 168, 69, 0.582);
+    color: #fff;
+}
+
+@media (max-width: 1150px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .main__title {
+        align-self: center;
+        justify-self: center;
+    }
+    .main__title h1,
+    p {
+        text-align: center;
+    }
+    .main__title ul {
+        justify-content: center;
+    }
+    .hand {
+        display: none;
+    }
+    .contato {
+        flex-wrap: wrap;
+    }
+    .contato .video {
+        margin: 30px 0;
+    }
+    .pessoas li {
+        display: none;
+    }
+}
