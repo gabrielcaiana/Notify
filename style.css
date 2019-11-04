@@ -78,7 +78,8 @@ header {
 main {
     grid-area: main;
     width: 100%;
-    height: 300px;
+    height: auto;
+    margin: 100px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -113,3 +114,51 @@ main div img:hover {
 
 
 /*Section*/
+
+.contato {
+    display: flex;
+    background-color: rgb(230, 227, 227);
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato {
+    color: #333;
+}
+
+.contato p {
+    max-width: 400px;
+}
+
+.contato input {
+    width: 250px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+}
+
+.contato button {
+    width: 80px;
+    margin: -5px;
+    padding: 12px;
+    background-color: rgba(19, 168, 69, 0.582);
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contato button:hover {
+    background-color: rgba(80, 235, 132, 0.582);
+}
+
+.contato div iframe {
+    border-radius: 15px;
+}
+
+
+/*Depoimentos*/
