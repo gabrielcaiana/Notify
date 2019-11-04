@@ -17,6 +17,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 90vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +52,7 @@ header {
     margin: 5px;
     border-radius: 100%;
     cursor: pointer;
+    transition: 1s;
 }
 
 .main__title ul li:hover {
@@ -72,3 +74,42 @@ header {
 
 
 /*Main*/
+
+main {
+    grid-area: main;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main div {
+    padding: 20px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+main div span {
+    margin: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+main div img {
+    border-radius: 100%;
+    background-color: rgba(15, 199, 76, 0.582);
+    transition: 1s;
+    padding: 15px;
+}
+
+main div img:hover {
+    background-color: rgba(80, 235, 132, 0.582);
+}
+
+
+/*Section*/
